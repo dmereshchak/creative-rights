@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { LeadButton } from "./LeadModal";
 
 const navLinks = [
-  { label: "Инструменты", href: "#tools" },
-  { label: "База знаний", href: "#knowledge" },
-  { label: "Тарифы", href: "#pricing" },
-  { label: "Партнеры", href: "#partners" },
+  { label: "Как это работает", href: "#how" },
+  { label: "Услуги и цены", href: "#pricing" },
+  { label: "Кто мы", href: "#team" },
+  { label: "Вопросы", href: "#faq" },
 ];
 
 export default function Header() {
@@ -36,11 +37,15 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Auth button */}
         <div className="hidden md:block">
-          <button className="rounded-lg border border-foreground/20 px-5 py-2 text-sm font-medium text-foreground hover:border-accent hover:text-accent transition-colors cursor-pointer">
-            Войти
-          </button>
+          <LeadButton
+            offer="consult"
+            source="header"
+            goal="cta_header"
+            className="rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-white hover:bg-accent-hover transition-colors cursor-pointer"
+          >
+            Запросить консультацию
+          </LeadButton>
         </div>
 
         {/* Mobile toggle */}
@@ -66,9 +71,14 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <button className="mt-2 w-full rounded-lg border border-foreground/20 px-5 py-2 text-sm font-medium text-foreground hover:border-accent hover:text-accent transition-colors">
-            Войти
-          </button>
+          <LeadButton
+            offer="consult"
+            source="header_mobile"
+            goal="cta_header"
+            className="mt-2 w-full rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white"
+          >
+            Запросить консультацию
+          </LeadButton>
         </nav>
       )}
     </header>

@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CreativeRights — лендинг для музыкантов
 
-## Getting Started
+Сайт: https://dmereshchak.github.io/creative-rights/ (GitHub Pages, публикуется сам при пуше в `main`).
 
-First, run the development server:
+Лендинг теста спроса: четыре оффера, каждая кнопка открывает форму заявки и отмечает цель в Яндекс Метрике. Заявки падают в Google-таблицу, дальше команда пишет человеку, выставляет счёт и делает работу (ИИ-черновик + проверка юриста).
+
+## Что заполнить перед запуском — `src/lib/config.ts`
+
+### 1. Google-форма для заявок
+
+1. Создайте Google-форму с 7 вопросами типа «Текст (строка)»: Контакт, Имя, Кто вы, Что нужно, Ситуация, Откуда кнопка, UTM. Обязательных вопросов не делайте.
+2. В форме: ⋮ → «Получить предзаполненную ссылку» → впишите в каждое поле что-нибудь → «Получить ссылку».
+3. В ссылке будут куски `entry.123456789=...` — это имена полей. Перепишите их в `GOOGLE_FORM.fields` по порядку.
+4. В `action` вставьте ссылку формы, заменив в конце `viewform` на `formResponse`.
+5. Во вкладке «Ответы» привяжите Google-таблицу — заявки будут там.
+
+### 2. Яндекс Метрика
+
+Создайте счётчик на metrika.yandex.ru, номер — в `YM_ID`. Цели (тип «JavaScript-событие»):
+
+| Цель | Когда |
+|---|---|
+| `offer_contract`, `offer_release_pack`, `offer_sub_producer`, `offer_sub_studio`, `offer_feed` | Клик по кнопке карточки в «Услуги и цены» (Г-3, Г-4) |
+| `cta_hero`, `cta_header`, `cta_faq`, `cta_checklist` | Кнопки «Запросить консультацию» и «Получить договоры для релиза» |
+| `lead_sent` | Заявка отправлена |
+
+### 3. Контакты
+
+`CONTACT_EMAIL` — рабочая почта (сейчас стоит `hello@creativerights.ru`, проверьте, что она существует). `TELEGRAM_CONTACT_URL` и `TELEGRAM_FEED_URL` — личка и канал с лентой; пока канала нет, кнопка ленты открывает форму.
+
+### 4. Политика данных
+
+`src/app/privacy/page.tsx` — черновик. Артём проверяет и вписывает оператора вместо `[ОПЕРАТОР]`. Без этого форму не публикуем.
+
+## Запуск у себя
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Сборка: `npx next build`. Если папка лежит по пути с кириллицей (как `Код/` в iCloud), Turbopack падает — используйте `npx next build --webpack`. На GitHub сборка идёт без этой проблемы.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`node_modules` и `.next` — ссылки на папки `*.nosync`, чтобы iCloud их не синхронизировал.

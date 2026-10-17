@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { Mail, Send } from "lucide-react";
+import { CONTACT_EMAIL, TELEGRAM_CONTACT_URL } from "@/lib/config";
 
 export default function Footer() {
   return (
@@ -11,8 +13,8 @@ export default function Footer() {
               Creative<span className="text-accent">Rights</span>
             </span>
             <p className="mt-3 text-sm text-white/40 leading-relaxed">
-              Проект носит справочный характер и не заменяет консультацию юриста.
-              Информация предоставляется &laquo;как есть&raquo;.
+              Юридическая помощь музыкантам. Материалы на сайте — справочные; разбор вашего договора
+              делаем по заявке.
             </p>
           </div>
 
@@ -22,14 +24,9 @@ export default function Footer() {
               <h4 className="text-xs font-bold uppercase tracking-wide text-white/50 mb-3">Документы</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-accent transition-colors">
+                  <Link href="/privacy" className="text-sm text-white/70 hover:text-accent transition-colors">
                     Политика обработки персональных данных
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-white/70 hover:text-accent transition-colors">
-                    Оферта
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -38,22 +35,24 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="mailto:hello@creativerights.ru"
+                    href={`mailto:${CONTACT_EMAIL}`}
                     className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-accent transition-colors"
                   >
                     <Mail size={14} />
-                    hello@creativerights.ru
+                    {CONTACT_EMAIL}
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-accent transition-colors"
-                  >
-                    <Send size={14} />
-                    Telegram
-                  </a>
-                </li>
+                {TELEGRAM_CONTACT_URL && (
+                  <li>
+                    <a
+                      href={TELEGRAM_CONTACT_URL}
+                      className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-accent transition-colors"
+                    >
+                      <Send size={14} />
+                      Telegram
+                    </a>
+                  </li>
+                )}
               </ul>
             </div>
           </div>
@@ -61,7 +60,7 @@ export default function Footer() {
 
         <div className="mt-10 border-t border-white/10 pt-6 text-center">
           <p className="text-xs text-white/30">
-            &copy; {new Date().getFullYear()} CreativeRights. Все права защищены.
+            &copy; {new Date().getFullYear()} CreativeRights
           </p>
         </div>
       </div>

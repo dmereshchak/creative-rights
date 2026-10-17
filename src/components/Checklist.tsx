@@ -1,14 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Download, CheckSquare, Square } from "lucide-react";
+import { FileText, CheckSquare, Square } from "lucide-react";
+import { LeadButton } from "./LeadModal";
 
 const items = [
-  "Проверить пункт об исключительном праве",
-  "Подписать акт приема-передачи",
-  "Задепонировать master copy / исходники",
-  "Проверить территорию действия лицензии",
-  "Убедиться в наличии раздела о royalty",
+  "Сплит-шит подписан всеми авторами музыки и текста",
+  "На бит есть лицензия или договор с битмейкером",
+  "С аранжировщиком и сессионными музыкантами подписаны договоры",
+  "Права на обложку оформлены на тебя",
+  "В договоре с дистрибьютором понятны срок, территория и как выйти",
 ];
 
 export default function Checklist() {
@@ -25,14 +26,14 @@ export default function Checklist() {
   const completedCount = checked.filter(Boolean).length;
 
   return (
-    <section className="bg-white py-20">
+    <section id="checklist" className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center">
-            Чек-лист действий
+            Чек-лист перед релизом
           </h2>
           <p className="mt-3 text-foreground/60 text-center">
-            Пошаговый алгоритм для защиты ваших прав при заключении договора.
+            Отметь, что уже сделано. Каждый пустой пункт — повод для спора, когда трек начнёт приносить деньги.
           </p>
 
           {/* Progress */}
@@ -79,10 +80,15 @@ export default function Checklist() {
 
           {/* CTA */}
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center gap-2 rounded-xl border border-accent text-accent px-6 py-3 text-sm font-semibold hover:bg-accent hover:text-white transition-all cursor-pointer">
-              <Download size={18} />
-              Скачать шаблон безопасного договора
-            </button>
+            <LeadButton
+              offer="release_pack"
+              source="checklist"
+              goal="cta_checklist"
+              className="inline-flex items-center gap-2 rounded-xl border border-accent text-accent px-6 py-3 text-sm font-semibold hover:bg-accent hover:text-white transition-all cursor-pointer"
+            >
+              <FileText size={18} />
+              Получить договоры для релиза
+            </LeadButton>
           </div>
         </div>
       </div>

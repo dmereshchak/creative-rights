@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Metrika from "@/components/Metrika";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -8,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CreativeRights — Legal-комплаенс для креативных индустрий",
+  title: "CreativeRights — юристы для музыкантов",
   description:
-    "Автоматический перевод законов в визуальные индикаторы и чек-листы. Защити проект до наступления инцидентов.",
+    "Проверка договора с лейблом, дистрибьютором или продюсером за 24 часа. ИИ размечает риски, юрист проверяет и объясняет простыми словами.",
 };
 
 export default function RootLayout({
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="ru">
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
+        <Metrika />
       </body>
     </html>
   );
