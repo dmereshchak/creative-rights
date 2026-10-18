@@ -35,6 +35,11 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/cookies/" className="text-sm text-white/70 hover:text-accent transition-colors">
+                    Согласие на cookie и Яндекс Метрику
+                  </Link>
+                </li>
+                <li>
                   <CookieSettingsButton className="text-sm text-white/70 hover:text-accent transition-colors cursor-pointer" />
                 </li>
               </ul>

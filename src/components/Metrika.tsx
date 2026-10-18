@@ -65,7 +65,7 @@ export default function Metrika() {
         <p className="flex-1 text-sm text-foreground/70 leading-relaxed">
           Мы используем Яндекс Метрику, чтобы понимать, как работает сайт. Она сохраняет файлы cookie и
           записывает действия на страницах. Включим её, только если разрешите.{" "}
-          <Link href="/consent/" className="text-accent underline">
+          <Link href="/cookies/" className="text-accent underline">
             Подробнее
           </Link>
         </p>
