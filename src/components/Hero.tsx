@@ -34,7 +34,7 @@ export default function Hero() {
             </a>
           </div>
           <p className="mt-4 text-sm text-foreground/50">
-            Проверка или составление договора — 2 990 ₽.
+            Проверка или составление договора — 1 990 ₽.
           </p>
         </div>
 
