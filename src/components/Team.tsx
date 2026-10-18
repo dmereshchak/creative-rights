@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const people = [
   {
-    photo: "/team/dmitry.jpg",
+    photo: "/team/dmitry.png",
     name: "Дмитрий Мерещак",
     role: "Юрист и музыкант",
     text: "Действующий артист и продюсер. Знает музыкальные договоры не только по учебнику, но и по своим релизам.",
   },
   {
-    photo: "/team/artyom.jpg",
+    photo: "/team/artyom.png",
     name: "Артём Бабанских",
     role: "Юрист",
     text: "Проверяет каждый разбор перед отправкой и отвечает на вопросы по правам на музыку.",
