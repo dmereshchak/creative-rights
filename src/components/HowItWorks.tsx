@@ -27,10 +27,10 @@ export default function HowItWorks() {
         <ol className="mt-12 grid gap-8 md:grid-cols-3">
           {steps.map(({ icon: Icon, title, text }, i) => (
             <li key={title} className="relative rounded-2xl border border-gray-mid bg-surface p-8">
-              <span className="absolute -top-4 left-8 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
+              <span className="absolute -top-4 left-8 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-on-accent">
                 {i + 1}
               </span>
-              <Icon size={28} className="text-accent" />
+              <Icon size={28} className="text-accent-strong" />
               <h3 className="mt-4 text-xl font-bold text-foreground">{title}</h3>
               <p className="mt-2 text-sm text-foreground/60 leading-relaxed">{text}</p>
             </li>

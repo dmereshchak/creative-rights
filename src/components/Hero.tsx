@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-foreground">
             Лейбл прислал договор?
             <br />
-            <span className="text-accent">Сначала покажи его нам</span>
+            <span className="text-accent-strong">Сначала покажи его нам</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-foreground/60 leading-relaxed max-w-xl">
             ИИ размечает рискованные пункты, юрист проверяет каждый разбор и объясняет простыми
@@ -21,14 +21,14 @@ export default function Hero() {
               offer="consult"
               source="hero"
               goal="cta_hero"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-accent-hover transition-all animate-pulse-glow cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-8 py-4 text-lg font-semibold text-on-accent shadow-lg hover:bg-accent-hover transition-all animate-pulse-glow cursor-pointer"
             >
               Запросить консультацию
               <ArrowRight size={20} />
             </LeadButton>
             <a
               href="#pricing"
-              className="inline-flex items-center justify-center rounded-xl border border-foreground/15 px-8 py-4 text-lg font-semibold text-foreground hover:border-accent hover:text-accent transition-colors"
+              className="inline-flex items-center justify-center rounded-xl border border-foreground/15 px-8 py-4 text-lg font-semibold text-foreground hover:border-accent-strong hover:text-accent-strong transition-colors"
             >
               Цены
             </a>
@@ -73,9 +73,9 @@ export default function Hero() {
               />
 
               <div className="flex items-start gap-3 rounded-xl border border-accent/30 bg-accent/5 p-4">
-                <MessageSquareText size={18} className="mt-0.5 shrink-0 text-accent" />
+                <MessageSquareText size={18} className="mt-0.5 shrink-0 text-accent-strong" />
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-wide text-accent">Комментарий юриста</p>
+                  <p className="text-xs font-bold uppercase tracking-wide text-accent-strong">Комментарий юриста</p>
                   <p className="text-sm font-medium text-foreground">
                     Предложи вместо отчуждения лицензию на 5 лет и закрытый список расходов.
                   </p>

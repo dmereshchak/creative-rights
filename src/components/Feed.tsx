@@ -39,7 +39,7 @@ export default function Feed() {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
+                className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent-strong hover:underline"
               >
                 {item.source} <ArrowUpRight size={14} />
               </a>

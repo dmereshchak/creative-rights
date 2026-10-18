@@ -35,7 +35,7 @@ export default function Faq() {
             <details key={q} className="group p-6">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
                 {q}
-                <span className="text-accent text-xl transition-transform group-open:rotate-45">+</span>
+                <span className="text-accent-strong text-xl transition-transform group-open:rotate-45">+</span>
               </summary>
               <p className="mt-3 text-sm text-foreground/60 leading-relaxed">{a}</p>
             </details>
@@ -47,7 +47,7 @@ export default function Faq() {
             offer="consult"
             source="faq"
             goal="cta_faq"
-            className="inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-accent-hover transition-all cursor-pointer"
+            className="inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-lg font-semibold text-on-accent shadow-lg hover:bg-accent-hover transition-all cursor-pointer"
           >
             Запросить консультацию
             <ArrowRight size={20} />

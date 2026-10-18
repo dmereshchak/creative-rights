@@ -80,7 +80,7 @@ export function LeadProvider({ children }: { children: React.ReactNode }) {
                 <p className="font-semibold text-foreground">Приём заявок через сайт откроется в ближайшие дни.</p>
                 <p className="mt-2">
                   Пока можно написать нам на{" "}
-                  <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent underline">
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent-strong underline">
                     {CONTACT_EMAIL}
                   </a>{" "}
                   — укажите, какая услуга нужна, и коротко опишите ситуацию. Договор сразу не прикладывайте.

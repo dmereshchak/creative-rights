@@ -65,7 +65,7 @@ export default function Metrika() {
         <p className="flex-1 text-sm text-foreground/70 leading-relaxed">
           Мы используем Яндекс Метрику, чтобы понимать, как работает сайт. Она сохраняет файлы cookie и
           записывает действия на страницах. Включим её, только если разрешите.{" "}
-          <Link href="/cookies/" className="text-accent underline">
+          <Link href="/cookies/" className="text-accent-strong underline">
             Подробнее
           </Link>
         </p>
@@ -73,14 +73,14 @@ export default function Metrika() {
           <button
             type="button"
             onClick={() => decide("accepted")}
-            className="flex-1 rounded-xl border border-accent px-5 py-2.5 text-sm font-semibold text-accent hover:bg-accent hover:text-white transition-colors cursor-pointer"
+            className="flex-1 rounded-xl border border-accent px-5 py-2.5 text-sm font-semibold text-accent-strong hover:bg-accent hover:text-on-accent transition-colors cursor-pointer"
           >
             Принять
           </button>
           <button
             type="button"
             onClick={() => decide("declined")}
-            className="flex-1 rounded-xl border border-accent px-5 py-2.5 text-sm font-semibold text-accent hover:bg-accent hover:text-white transition-colors cursor-pointer"
+            className="flex-1 rounded-xl border border-accent px-5 py-2.5 text-sm font-semibold text-accent-strong hover:bg-accent hover:text-on-accent transition-colors cursor-pointer"
           >
             Отклонить
           </button>

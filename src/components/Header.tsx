@@ -21,7 +21,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 select-none">
           <span className="text-2xl font-extrabold tracking-tight text-foreground">
-            Creative<span className="text-accent">Rights</span>
+            Creative<span className="text-accent-strong">Rights</span>
           </span>
         </a>
 
@@ -31,7 +31,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/70 hover:text-accent transition-colors"
+              className="text-sm font-medium text-foreground/70 hover:text-accent-strong transition-colors"
             >
               {link.label}
             </a>
@@ -44,7 +44,7 @@ export default function Header() {
             offer="consult"
             source="header"
             goal="cta_header"
-            className="rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-white hover:bg-accent-hover transition-colors cursor-pointer"
+            className="rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-on-accent hover:bg-accent-hover transition-colors cursor-pointer"
           >
             Запросить консультацию
           </LeadButton>
@@ -70,7 +70,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="block py-3 text-sm font-medium text-foreground/70 hover:text-accent transition-colors"
+              className="block py-3 text-sm font-medium text-foreground/70 hover:text-accent-strong transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -80,7 +80,7 @@ export default function Header() {
             offer="consult"
             source="header_mobile"
             goal="cta_header"
-            className="mt-2 w-full rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white"
+            className="mt-2 w-full rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-on-accent"
           >
             Запросить консультацию
           </LeadButton>

@@ -38,7 +38,7 @@ export default function Team() {
                 />
                 <div>
                   <h3 className="text-lg font-bold text-foreground">{name}</h3>
-                  <p className="text-sm text-accent font-medium">{role}</p>
+                  <p className="text-sm text-accent-strong font-medium">{role}</p>
                 </div>
               </div>
               <p className="mt-5 text-sm text-foreground/60 leading-relaxed">{text}</p>

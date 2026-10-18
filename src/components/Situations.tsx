@@ -46,7 +46,7 @@ export default function Situations() {
           {situations.map(({ icon: Icon, title, text }) => (
             <article key={title} className="rounded-2xl border border-gray-mid bg-surface p-6 shadow-sm">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
-                <Icon size={22} className="text-accent" />
+                <Icon size={22} className="text-accent-strong" />
               </div>
               <h3 className="mt-4 text-lg font-bold text-foreground">{title}</h3>
               <p className="mt-2 text-sm text-foreground/60 leading-relaxed">{text}</p>

@@ -77,7 +77,7 @@ export default function Pricing() {
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-4 py-1 text-xs font-bold text-white uppercase tracking-wide">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-4 py-1 text-xs font-bold text-on-accent uppercase tracking-wide">
                   Чаще всего
                 </div>
               )}
@@ -97,7 +97,7 @@ export default function Pricing() {
               <ul className="mt-5 space-y-2.5">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2">
-                    <Check size={18} className="text-accent mt-0.5 shrink-0" />
+                    <Check size={18} className="text-accent-strong mt-0.5 shrink-0" />
                     <span className="text-sm text-foreground/70">{f}</span>
                   </li>
                 ))}
@@ -112,8 +112,8 @@ export default function Pricing() {
                     goal={`offer_${b.offer}`}
                     className={`w-full rounded-xl py-3.5 text-sm font-semibold transition-all cursor-pointer ${
                       i === 0
-                        ? "bg-accent text-white hover:bg-accent-hover shadow-md"
-                        : "border border-accent text-accent hover:bg-accent hover:text-white"
+                        ? "bg-accent text-on-accent hover:bg-accent-hover shadow-md"
+                        : "border border-accent-strong text-accent-strong hover:bg-accent hover:text-on-accent"
                     }`}
                   >
                     {b.label}
