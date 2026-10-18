@@ -63,11 +63,11 @@ export default function Pricing() {
 
         {/* Subgrid: строки «название / описание / цена / список / кнопки» общие для всех карточек,
             поэтому цены и кнопки стоят на одной линии при любой длине текста */}
-        <div className="mt-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-12 grid max-w-3xl gap-x-6 md:grid-cols-2 xl:max-w-none xl:grid-cols-4">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative row-span-5 mb-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border p-6 xl:p-7 ${
+              className={`relative row-span-5 mb-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border p-7 ${
                 plan.highlighted ? "border-accent bg-surface shadow-xl" : "border-gray-mid bg-surface shadow-sm"
               }`}
             >
@@ -77,12 +77,12 @@ export default function Pricing() {
                 </div>
               )}
 
-              <h3 className="text-lg xl:text-xl font-bold text-foreground">{plan.name}</h3>
+              <h3 className="text-xl font-bold text-foreground">{plan.name}</h3>
               <p className="mt-1 text-sm text-foreground/50">{plan.audience}</p>
 
               <div className="mt-5 flex items-end self-end whitespace-nowrap">
                 <span
-                  className={`font-extrabold leading-none text-foreground ${/\d/.test(plan.price) ? "text-3xl xl:text-4xl" : "text-2xl xl:text-3xl"}`}
+                  className={`font-extrabold leading-none text-foreground ${/\d/.test(plan.price) ? "text-4xl" : "text-3xl"}`}
                 >
                   {plan.price}
                 </span>
