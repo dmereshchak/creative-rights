@@ -20,13 +20,13 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how" className="bg-white py-20">
+    <section id="how" className="bg-surface py-20">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center">Как это работает</h2>
 
         <ol className="mt-12 grid gap-8 md:grid-cols-3">
           {steps.map(({ icon: Icon, title, text }, i) => (
-            <li key={title} className="relative rounded-2xl border border-gray-mid bg-white p-8">
+            <li key={title} className="relative rounded-2xl border border-gray-mid bg-surface p-8">
               <span className="absolute -top-4 left-8 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
                 {i + 1}
               </span>

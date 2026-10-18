@@ -44,7 +44,7 @@ export default function Situations() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {situations.map(({ icon: Icon, title, text }) => (
-            <article key={title} className="rounded-2xl border border-gray-mid bg-white p-6 shadow-sm">
+            <article key={title} className="rounded-2xl border border-gray-mid bg-surface p-6 shadow-sm">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10">
                 <Icon size={22} className="text-accent" />
               </div>

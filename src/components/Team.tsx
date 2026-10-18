@@ -1,14 +1,14 @@
-import { Mic2, Scale } from "lucide-react";
+import Image from "next/image";
 
 const people = [
   {
-    icon: Mic2,
+    photo: "/team/dmitry.jpg",
     name: "Дмитрий Мерещак",
     role: "Юрист и артист DMERS",
     text: "Действующий артист и продюсер. Знает музыкальные договоры не только по учебнику, но и по своим релизам.",
   },
   {
-    icon: Scale,
+    photo: "/team/artyom.jpg",
     name: "Артём",
     role: "Юрист, договоры и права",
     text: "Проверяет каждый разбор перед отправкой и отвечает на вопросы по правам на музыку.",
@@ -26,12 +26,16 @@ export default function Team() {
         </p>
 
         <div className="mt-12 mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
-          {people.map(({ icon: Icon, name, role, text }) => (
-            <article key={name} className="rounded-2xl border border-gray-mid bg-white p-8 shadow-sm">
+          {people.map(({ photo, name, role, text }) => (
+            <article key={name} className="rounded-2xl border border-gray-mid bg-surface p-8 shadow-sm">
               <div className="flex items-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent/10">
-                  <Icon size={26} className="text-accent" />
-                </div>
+                <Image
+                  src={photo}
+                  alt={name}
+                  width={160}
+                  height={160}
+                  className="h-20 w-20 shrink-0 rounded-full object-cover object-top ring-2 ring-accent/20"
+                />
                 <div>
                   <h3 className="text-lg font-bold text-foreground">{name}</h3>
                   <p className="text-sm text-accent font-medium">{role}</p>

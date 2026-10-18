@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Situations from "@/components/Situations";
 import HowItWorks from "@/components/HowItWorks";
 import Pricing from "@/components/Pricing";
-import Checklist from "@/components/Checklist";
+import Feed from "@/components/Feed";
 import Team from "@/components/Team";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
@@ -18,7 +18,7 @@ export default function Home() {
         <Situations />
         <HowItWorks />
         <Pricing />
-        <Checklist />
+        <Feed />
         <Team />
         <Faq />
       </main>

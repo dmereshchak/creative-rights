@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Mail, Send } from "lucide-react";
 import { CONTACT_EMAIL, TELEGRAM_CONTACT_URL } from "@/lib/config";
+import { CookieSettingsButton } from "./Metrika";
 
 export default function Footer() {
   return (
-    <footer className="bg-foreground text-white">
+    <footer className="bg-ink text-white">
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Logo & disclaimer */}
@@ -24,9 +25,17 @@ export default function Footer() {
               <h4 className="text-xs font-bold uppercase tracking-wide text-white/50 mb-3">Документы</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/privacy" className="text-sm text-white/70 hover:text-accent transition-colors">
+                  <Link href="/privacy/" className="text-sm text-white/70 hover:text-accent transition-colors">
                     Политика обработки персональных данных
                   </Link>
+                </li>
+                <li>
+                  <Link href="/consent/" className="text-sm text-white/70 hover:text-accent transition-colors">
+                    Согласие на обработку персональных данных
+                  </Link>
+                </li>
+                <li>
+                  <CookieSettingsButton className="text-sm text-white/70 hover:text-accent transition-colors cursor-pointer" />
                 </li>
               </ul>
             </div>

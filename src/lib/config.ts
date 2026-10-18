@@ -1,28 +1,24 @@
 // Настройки, которые команда заполняет сама. Инструкция — в README.md.
 
 // Яндекс Метрика: номер счётчика (только цифры). Пусто — Метрика не грузится.
-export const YM_ID = "";
+export const YM_ID = "113666741";
 
-// Google-форма, куда падают заявки (ответы видно в Google-таблице).
-// action: ссылка вида https://docs.google.com/forms/d/e/<ID>/formResponse
-// fields: имена полей вида entry.123456789 — по одному на каждый вопрос формы.
-export const GOOGLE_FORM = {
-  action: "",
-  fields: {
-    contact: "",
-    name: "",
-    segment: "",
-    offer: "",
-    message: "",
-    source: "",
-    utm: "",
+// Приём заявок через форму. Выключен до подачи уведомления в Роскомнадзор (ст. 22 152-ФЗ):
+// кнопки работают и считаются в Метрике, но вместо формы — предложение написать на почту.
+export const FORM_ENABLED = false;
+
+// Яндекс Форма с заявкой (данные хранятся в России — требование ч. 5 ст. 18 152-ФЗ).
+// id — из ссылки https://forms.yandex.ru/u/<id>/
+// params — идентификаторы скрытых вопросов формы, в которые сайт передаёт значения.
+export const YANDEX_FORM = {
+  id: "6ad4ec0ec45c07c7a93c7b06",
+  params: {
+    offer: "offer",
+    source: "source",
+    utm: "utm",
   },
 };
 
 // Контакты на сайте.
-export const CONTACT_EMAIL = "hello@creativerights.ru";
+export const CONTACT_EMAIL = "creativerights@mail.ru";
 export const TELEGRAM_CONTACT_URL = ""; // https://t.me/<ник>, куда писать напрямую
-export const TELEGRAM_FEED_URL = ""; // https://t.me/<канал> с лентой правовых изменений
-
-// Сколько заказов идут со скидкой на старте (из плана теста спроса).
-export const LAUNCH_DISCOUNT_SLOTS = 20;

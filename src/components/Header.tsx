@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { LeadButton } from "./LeadModal";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { label: "Как это работает", href: "#how" },
@@ -15,7 +16,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-mid/50">
+    <header className="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-gray-mid/50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 select-none">
@@ -37,7 +38,8 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
           <LeadButton
             offer="consult"
             source="header"
@@ -49,18 +51,21 @@ export default function Header() {
         </div>
 
         {/* Mobile toggle */}
+        <div className="md:hidden flex items-center gap-3">
+        <ThemeToggle />
         <button
-          className="md:hidden text-foreground"
+          className="text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Меню"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
+        </div>
       </div>
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <nav className="md:hidden border-t border-gray-mid/50 bg-white px-6 pb-4">
+        <nav className="md:hidden border-t border-gray-mid/50 bg-surface px-6 pb-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
