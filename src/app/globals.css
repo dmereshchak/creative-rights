@@ -9,10 +9,10 @@
   --line: #E5E7EB;
   --soft-text: #6B7280;
   --ink: #0B132B;
-  /* Бирюза для текста, ссылок и рамок кнопок (5,5:1 на белом); на тёмной — обычная бирюза */
-  --accent-strong: #0F766E;
-  /* Текст на заливке бирюзой (7,0:1) */
-  --on-accent: #0B132B;
+  /* Бирюза для текста и ссылок: на светлой — фирменная #1A938C (3,8:1 на белом), на тёмной — светлее */
+  --accent-strong: #1A938C;
+  /* Текст на заливке бирюзой — белый (3,8:1) */
+  --on-accent: #ffffff;
   color-scheme: light;
 }
 
@@ -25,7 +25,7 @@
   --soft-text: #94A3B8;
   --ink: #05080F;
   --accent-strong: #20B2AA;
-  --on-accent: #0B132B;
+  --on-accent: #ffffff;
   color-scheme: dark;
 }
 
@@ -34,8 +34,9 @@
   --color-foreground: var(--fg);
   --color-surface: var(--surface);
   --color-ink: var(--ink);
-  --color-accent: #20B2AA;
-  --color-accent-hover: #1a9e97;
+  /* Фирменная бирюза (с 18.10.2026 — «середина» между #20B2AA и #0F766E) */
+  --color-accent: #1A938C;
+  --color-accent-hover: #17827C;
   --color-accent-strong: var(--accent-strong);
   --color-on-accent: var(--on-accent);
   --color-gray-light: var(--muted);
@@ -70,8 +71,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(32, 178, 170, 0.4); }
-  50% { box-shadow: 0 0 20px 4px rgba(32, 178, 170, 0.3); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(26, 147, 140, 0.4); }
+  50% { box-shadow: 0 0 20px 4px rgba(26, 147, 140, 0.3); }
 }
 
 .animate-fade-in-up {
