@@ -61,12 +61,14 @@ export default function Pricing() {
           Оплата — после того, как юрист посмотрит запрос и подтвердит срок.
         </p>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        {/* Subgrid: строки «название / описание / цена / список / кнопки» общие для всех карточек,
+            поэтому цены и кнопки стоят на одной линии при любой длине текста */}
+        <div className="mt-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-2xl border p-7 flex flex-col ${
-                plan.highlighted ? "border-accent bg-surface shadow-xl lg:scale-[1.03]" : "border-gray-mid bg-surface shadow-sm"
+              className={`relative row-span-5 mb-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border p-6 xl:p-7 ${
+                plan.highlighted ? "border-accent bg-surface shadow-xl" : "border-gray-mid bg-surface shadow-sm"
               }`}
             >
               {plan.highlighted && (
@@ -75,19 +77,19 @@ export default function Pricing() {
                 </div>
               )}
 
-              <h3 className="text-xl font-bold text-foreground whitespace-nowrap">{plan.name}</h3>
+              <h3 className="text-lg xl:text-xl font-bold text-foreground">{plan.name}</h3>
               <p className="mt-1 text-sm text-foreground/50">{plan.audience}</p>
 
-              <div className="mt-5 flex h-11 items-end">
+              <div className="mt-5 flex items-end self-end whitespace-nowrap">
                 <span
-                  className={`font-extrabold text-foreground ${/\d/.test(plan.price) ? "text-4xl" : "text-3xl"}`}
+                  className={`font-extrabold leading-none text-foreground ${/\d/.test(plan.price) ? "text-3xl xl:text-4xl" : "text-2xl xl:text-3xl"}`}
                 >
                   {plan.price}
                 </span>
-                {plan.period && <span className="text-base text-foreground/50">{plan.period}</span>}
+                {plan.period && <span className="ml-1 text-base leading-none text-foreground/50">{plan.period}</span>}
               </div>
 
-              <ul className="mt-5 flex-1 space-y-2.5">
+              <ul className="mt-5 space-y-2.5">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2">
                     <Check size={18} className="text-accent mt-0.5 shrink-0" />
@@ -96,7 +98,7 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <div className="mt-6 space-y-2">
+              <div className="mt-6 space-y-2 self-start">
                 {plan.buttons.map((b, i) => (
                   <LeadButton
                     key={b.offer}
