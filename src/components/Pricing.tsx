@@ -95,11 +95,18 @@ export default function Pricing() {
                 </div>
               )}
 
-              <h3 className="text-xl font-bold text-foreground">{plan.name}</h3>
-              <p className="mt-1 text-sm text-foreground/50">{plan.audience}</p>
+              {/* Фиксированная высота шапки, чтобы цены и списки во всех карточках стояли на одной линии */}
+              <div className="lg:min-h-[7.5rem]">
+                <h3 className="text-xl font-bold text-foreground">{plan.name}</h3>
+                <p className="mt-1 text-sm text-foreground/50">{plan.audience}</p>
+              </div>
 
-              <div className="mt-6">
-                <span className="text-4xl font-extrabold text-foreground">{plan.price}</span>
+              <div className="mt-6 flex h-11 items-end">
+                <span
+                  className={`font-extrabold text-foreground ${/\d/.test(plan.price) ? "text-4xl" : "text-3xl"}`}
+                >
+                  {plan.price}
+                </span>
                 {plan.period && <span className="text-base text-foreground/50">{plan.period}</span>}
               </div>
 
