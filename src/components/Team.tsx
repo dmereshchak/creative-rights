@@ -34,6 +34,7 @@ export default function Team() {
                   alt={name}
                   width={160}
                   height={160}
+                  draggable={false}
                   className="h-20 w-20 shrink-0 rounded-full object-cover object-top ring-2 ring-accent/20"
                 />
                 <div>

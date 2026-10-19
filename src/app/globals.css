@@ -54,6 +54,16 @@ html {
   background: linear-gradient(to bottom, var(--surface) 0 50%, var(--ink) 50% 100%);
 }
 
+/* Картинки сайта не сохраняются обычными способами: правый клик, долгое нажатие на телефоне, перетаскивание.
+   Правило для всех изображений, в том числе будущих (брендбук, раздел «Изображения»). */
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
 body {
   min-height: 100vh;
   background: var(--color-background);
