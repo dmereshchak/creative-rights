@@ -1,1 +1,97 @@
-[]
+[
+  {
+    "id": "2026-10-19-1",
+    "date": "2026-10-19",
+    "added": "2026-10-19",
+    "expires": "2027-02-16",
+    "category": "courts",
+    "title": "Разин получил в Турции решение о правах на 28 песен «Ласкового мая»",
+    "summary": "Суд Турции в первой инстанции признал Андрея Разина автором и правообладателем 28 песен группы. В российских судах он эти споры проиграл: документы признаны недостоверными.",
+    "forYou": "Решение иностранного суда в России само по себе не действует. Права на каталог могут оспаривать в разных странах — храните документы об авторстве и договоры с первого дня.",
+    "source": "M24",
+    "url": "https://m24.ru/news/19102026/954190",
+    "image": {
+      "author": "Joe Gratz",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Courtroom_One_Gavel_-_Flickr_-_Joe_Gratz.jpg",
+      "file": "/news/2026-10-19-1.jpg"
+    }
+  },
+  {
+    "id": "2026-10-19-2",
+    "date": "2026-10-18",
+    "added": "2026-10-19",
+    "expires": "2027-01-16",
+    "category": "platforms",
+    "title": "YouTube начнёт сам отмечать ИИ-треки, российские стриминги ждут данных от вас",
+    "summary": "YouTube вводит метку для ИИ-музыки и будет сам распознавать ИИ-вокал. «Яндекс Музыка» подтвердила, что её метки строятся прежде всего на данных правообладателей.",
+    "forYou": "При загрузке релиза указывайте, использовался ли ИИ. Ошибка в этих данных может обернуться претензией от площадки или дистрибьютора.",
+    "source": "Коммерсантъ",
+    "url": "https://www.kommersant.ru/doc/9041437",
+    "image": {
+      "author": "Marco Raaphorst from The Hague, The Netherlands",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rendering_audio_on_Cubase,_@Tom_America.jpg",
+      "file": "/news/2026-10-19-2.jpg"
+    }
+  },
+  {
+    "id": "2026-10-19-3",
+    "date": "2026-10-02",
+    "added": "2026-10-19",
+    "expires": "2026-10-27",
+    "category": "industry",
+    "title": "До 27 октября принимают заявки на «Музконтент ПФКИ»",
+    "summary": "Президентский фонд культурных инициатив до 27 октября принимает заявки на отбор музыки для аудитории 6–35 лет на контент.пфки.рф. Победителям оплачивают запись и съёмки.",
+    "forYou": "Шанс получить деньги на запись без лейбла. Подают юрлица и ИП. Перед подачей прочитайте, какие права на трек получает фонд.",
+    "source": "InterMedia",
+    "url": "https://intermedia.ru/news/407138",
+    "image": {
+      "author": "Marcus Ilgner",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ma_il%27s_home_recording_studio_-_Part_2_-_Kurzweil_K2500X,_Multitrac_recorder,_microphone_with_popguard,_Ibanez_RD_5_string_bass,_Yamaha_Pacifica,_etc.jpg",
+      "file": "/news/2026-10-19-3.jpg"
+    }
+  },
+  {
+    "id": "2026-10-19-4",
+    "date": "2026-10-16",
+    "added": "2026-10-19",
+    "expires": "2027-02-13",
+    "category": "courts",
+    "title": "Мосгорсуд запретил распространять трек Nkeeei и Lovv66 по иску лейбла",
+    "summary": "По иску Koala Music суд запретил компании 3Nt Solutions LLP создавать условия для распространения фонограммы «Снова звонит». Права лейбла подтвердил лицензионный договор, нарушение — скриншоты.",
+    "forYou": "Лейбл или лицензиат с исключительной лицензией может сам добиться запрета на пиратское размещение. Скриншоты страниц — рабочее доказательство, сохраняйте их сразу.",
+    "source": "M24 / ТАСС",
+    "url": "https://www.m24.ru/news/16102026/953420",
+    "image": {
+      "author": "Derrick Coetzee from Berkeley, CA, USA",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Technician_with_laptop_working_on_server_rack_at_NERSC.jpg",
+      "file": "/news/2026-10-19-4.jpg"
+    }
+  },
+  {
+    "id": "2026-10-19-5",
+    "date": "2026-10-13",
+    "added": "2026-10-19",
+    "expires": "2027-02-10",
+    "category": "courts",
+    "title": "Театр Кадышевой заплатит РАО 100 000 ₽ за несданные отчёты о концертах",
+    "summary": "Суд в Москве взыскал с театра «Золотое кольцо» неустойку: он не сдал РАО сведения о сборах и исполненных песнях за два концерта IV квартала 2023 года. Встречный иск театра вернули.",
+    "forYou": "Если вы сами организуете концерты по договору с РАО, неустойка грозит и за опоздание с отчётом, а не только за неуплату. Проверьте сроки отчётов в своём договоре.",
+    "source": "РИА Новости",
+    "url": "https://ria.ru/20261013/rao-2124112533.html",
+    "image": {
+      "author": "Diogo Valério from Oslo, Norway",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Louisiana_Museum_-_concert_hall.jpg",
+      "file": "/news/2026-10-19-5.jpg"
+    }
+  }
+]
