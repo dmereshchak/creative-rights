@@ -28,4 +28,4 @@ export const SITE_URL = "https://creativerights.ru";
 
 // Коды подтверждения прав в Яндекс Вебмастере и Google Search Console (мета-тег, только сам код).
 export const YANDEX_VERIFICATION = "dd446ff64191196c";
-export const GOOGLE_VERIFICATION = "";
+export const GOOGLE_VERIFICATION = "bxNm5lIgMwvoP9ibK50xxE1ul7-GvU5dSnJ3chMYtG4";
