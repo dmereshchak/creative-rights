@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Согласие на обработку персональных данных — CreativeRights",
+  title: "Согласие на обработку персональных данных",
 };
 
 export default function Consent() {

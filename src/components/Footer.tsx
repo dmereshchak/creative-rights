@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Mail, Send } from "lucide-react";
 import { CONTACT_EMAIL, TELEGRAM_CONTACT_URL } from "@/lib/config";
 import { CookieSettingsButton } from "./Metrika";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -10,9 +11,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Logo & disclaimer */}
           <div className="max-w-md">
-            <span className="text-xl font-extrabold tracking-tight">
-              Creative<span className="text-accent">Rights</span>
-            </span>
+            <Logo className="h-8 w-auto text-white" />
             <p className="mt-3 text-sm text-white/40 leading-relaxed">
               Юридическая помощь музыкантам. Материалы на сайте — справочные; разбор вашего договора
               делаем по заявке.

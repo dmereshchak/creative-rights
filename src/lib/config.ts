@@ -22,3 +22,10 @@ export const YANDEX_FORM = {
 // Контакты на сайте.
 export const CONTACT_EMAIL = "creativerights@mail.ru";
 export const TELEGRAM_CONTACT_URL = ""; // https://t.me/<ник>, куда писать напрямую
+
+// Адрес сайта — для канонических ссылок, sitemap.xml и разметки для поисковиков.
+export const SITE_URL = "https://creativerights.ru";
+
+// Коды подтверждения прав в Яндекс Вебмастере и Google Search Console (мета-тег, только сам код).
+export const YANDEX_VERIFICATION = "";
+export const GOOGLE_VERIFICATION = "";

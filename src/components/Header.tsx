@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { LeadButton } from "./LeadModal";
 import ThemeToggle from "./ThemeToggle";
+import Logo from "./Logo";
 
 const navLinks = [
   { label: "Как это работает", href: "#how" },
@@ -19,10 +20,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-gray-mid/50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 select-none">
-          <span className="text-2xl font-extrabold tracking-tight text-foreground">
-            Creative<span className="text-accent-strong">Rights</span>
-          </span>
+        <a href="#" className="flex items-center select-none text-foreground" aria-label="CreativeRights — наверх">
+          <Logo className="h-8 w-auto md:h-9" />
         </a>
 
         {/* Desktop nav */}
