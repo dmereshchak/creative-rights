@@ -12,6 +12,7 @@ export default function Footer() {
           {/* Logo & disclaimer */}
           <div className="max-w-md">
             <Logo className="h-8 w-auto text-white" />
+            <p className="mt-3 text-base font-semibold text-white">Твоё творчество — твои правила!</p>
             <p className="mt-3 text-sm text-white/40 leading-relaxed">
               Юридическая помощь музыкантам. Материалы на сайте — справочные; разбор вашего договора
               делаем по заявке.
