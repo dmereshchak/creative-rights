@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Стили — прямо в HTML: на медленной сети (VPN) экономит один запрос до первого показа страницы
+  experimental: { inlineCss: true },
 };
 
 export default nextConfig;

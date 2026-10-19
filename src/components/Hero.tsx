@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-surface">
       <div className="mx-auto max-w-7xl px-6 py-16 md:py-28 flex flex-col lg:flex-row items-center gap-14">
         {/* Left — Text */}
-        <div className="flex-1 max-w-2xl animate-fade-in-up">
+        <div className="flex-1 max-w-2xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-foreground">
             Лейбл прислал договор?
             <br />
@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
 
         {/* Right — пример разбора */}
-        <div className="flex-1 w-full max-w-lg animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+        <div className="flex-1 w-full max-w-lg animate-fade-in-up">
           <div className="rounded-2xl border border-gray-mid bg-surface shadow-xl overflow-hidden">
             <div className="flex items-center gap-2 px-4 py-3 bg-gray-light border-b border-gray-mid">
               <span className="h-3 w-3 rounded-full bg-red" />

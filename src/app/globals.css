@@ -92,8 +92,13 @@ body {
   50% { box-shadow: 0 0 20px 4px rgba(26, 147, 140, 0.3); }
 }
 
+/* Только макет разбора справа: текст первого экрана виден сразу, без ожидания анимации */
 .animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out both;
+  animation: fade-in-up 0.4s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up, .animate-scan-line, .animate-pulse-glow { animation: none; }
 }
 
 .animate-scan-line {
