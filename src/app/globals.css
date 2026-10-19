@@ -17,13 +17,13 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #0A0F1E;
+  --bg: #0B132B;
   --fg: #FFFFFF;
-  --surface: #111930;
-  --muted: #0D1426;
-  --line: #24304A;
+  --surface: #13204A;
+  --muted: #0F1A3A;
+  --line: #2A3A66;
   --soft-text: #94A3B8;
-  --ink: #05080F;
+  --ink: #070D20;
   --accent-strong: #20B2AA;
   --on-accent: #ffffff;
   color-scheme: dark;

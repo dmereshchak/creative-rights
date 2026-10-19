@@ -49,7 +49,7 @@ export function LeadProvider({ children }: { children: React.ReactNode }) {
       {FORM_ENABLED && YANDEX_FORM.id && <Script src="https://forms.yandex.ru/_static/embed.js" strategy="lazyOnload" />}
       {lead && (
         <div
-          className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm p-0 sm:p-6"
+          className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center bg-ink/70 backdrop-blur-sm p-0 sm:p-6"
           onClick={close}
         >
           <div
