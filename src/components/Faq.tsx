@@ -26,7 +26,7 @@ const faq = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="bg-surface py-20">
+    <section id="faq" className="bg-gray-light py-20">
       <div className="mx-auto max-w-3xl px-6">
         <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center">Вопросы</h2>
 

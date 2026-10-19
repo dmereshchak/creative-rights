@@ -68,11 +68,11 @@ export default function Pricing() {
 
         {/* Subgrid: строки «название / описание / цена / список / кнопки» общие для всех карточек,
             поэтому цены и кнопки стоят на одной линии при любой длине текста */}
-        <div className="mx-auto mt-12 grid max-w-3xl gap-x-6 md:grid-cols-2 xl:max-w-none xl:grid-cols-4">
+        <div className="mx-auto mt-12 grid max-w-3xl gap-x-6 gap-y-6 md:grid-cols-2 xl:max-w-none xl:grid-cols-4">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative row-span-5 mb-6 grid grid-rows-subgrid gap-y-0 rounded-2xl border p-6 ${
+              className={`relative row-span-5 grid grid-rows-subgrid gap-y-0 rounded-2xl border p-6 ${
                 plan.highlighted ? "border-accent bg-surface shadow-xl" : "border-gray-mid bg-surface shadow-sm"
               }`}
             >

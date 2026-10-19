@@ -17,7 +17,7 @@ const people = [
 
 export default function Team() {
   return (
-    <section id="team" className="bg-gray-light py-20">
+    <section id="team" className="bg-surface py-20">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center">Кто мы</h2>
         <p className="mt-3 text-foreground/60 text-center max-w-xl mx-auto">
