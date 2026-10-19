@@ -63,7 +63,29 @@ export default function News() {
             <h2 className="text-2xl font-extrabold text-foreground">{g.label}</h2>
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               {g.items.map((item) => (
-                <article key={item.id} className="flex flex-col rounded-2xl border border-gray-mid bg-surface p-6 shadow-sm">
+                <article key={item.id} className="flex flex-col overflow-hidden rounded-2xl border border-gray-mid bg-surface shadow-sm">
+                  {item.image && (
+                    <figure>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={item.image.file} alt="" loading="lazy" draggable={false} className="aspect-[16/9] w-full object-cover" />
+                      <figcaption className="px-6 pt-2 text-xs text-gray-text">
+                        Фото:{" "}
+                        <a href={item.image.source} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          {item.image.author}
+                        </a>
+                        ,{" "}
+                        {item.image.licenseUrl ? (
+                          <a href={item.image.licenseUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                            {item.image.license}
+                          </a>
+                        ) : (
+                          item.image.license
+                        )}
+                        , Wikimedia Commons
+                      </figcaption>
+                    </figure>
+                  )}
+                  <div className="flex flex-1 flex-col p-6">
                   <time dateTime={item.date} className="text-xs text-gray-text">
                     {formatDate(item.date)}
                   </time>
@@ -81,6 +103,7 @@ export default function News() {
                   >
                     {item.source} <ArrowUpRight size={14} />
                   </a>
+                  </div>
                 </article>
               ))}
             </div>

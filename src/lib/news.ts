@@ -15,6 +15,8 @@ export type NewsItem = {
   forYou: string; // что это значит для музыканта
   source: string;
   url: string;
+  // Фото со свободной лицензией: файл в public/news/<id>.jpg, автор, лицензия, страница источника
+  image?: { file: string; author: string; license: string; licenseUrl?: string | null; source: string };
 };
 
 export const NEWS_TTL_DAYS = 90;
