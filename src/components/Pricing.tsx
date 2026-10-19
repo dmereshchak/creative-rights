@@ -18,7 +18,7 @@ const plans: Plan[] = [
     name: "Договор",
     audience: "Проверка или составление",
     price: "1 990 ₽",
-    features: ["Лейбл, дистрибьютор, продюсер, бит", "Разбор рисков и правки", "Договор под вашу ситуацию", "Срок — 24 часа"],
+    features: ["Лейбл, дистрибьютор, бит", "Разбор рисков и правки", "Договор под вашу ситуацию", "Срок — 24 часа"],
     highlighted: true,
     buttons: [
       { offer: "contract_review", label: "Проверить договор" },
@@ -27,16 +27,16 @@ const plans: Plan[] = [
   },
   {
     name: "Пакет для релиза",
-    audience: "Юрист составит договоры под ваш релиз",
+    audience: "Договоры под ваш релиз",
     price: "4 490 ₽",
-    features: ["Соглашение о долях между соавторами", "Договор с аранжировщиком", "Договор с сессионным музыкантом", "Лицензия на бит"],
+    features: ["Доли между соавторами", "Договор с аранжировщиком", "Договор с сессионщиком", "Лицензия на бит"],
     buttons: [{ offer: "release_pack", label: "Получить пакет" }],
   },
   {
     name: "Полное ведение релиза",
     audience: "От записи до выхода трека",
     price: "По запросу",
-    features: ["Договоры со всеми участниками", "Проверка договора с лейблом", "Права на бит, обложку, клип", "Юрист на связи до релиза"],
+    features: ["Договоры с участниками", "Проверка договора с лейблом", "Права на бит, обложку, клип", "Юрист на связи до релиза"],
     buttons: [{ offer: "release_full", label: "Обсудить релиз" }],
   },
   {
@@ -45,10 +45,10 @@ const plans: Plan[] = [
     price: "от 1 490 ₽",
     period: "/мес",
     features: [
-      "Договоры каждый месяц — проверка или составление",
       "Вопросы юристу в переписке",
-      "«Личная» — 1 490 ₽/мес: 1 договор",
-      "«Студия» — 4 990 ₽/мес: до 4 договоров, ответ за 12 часов",
+      "Личная — 1 договор в месяц",
+      "Студия — до 4 договоров",
+      "Студия — ответ за 12 часов",
     ],
     buttons: [
       { offer: "sub_personal", label: "Личная — 1 490 ₽" },
@@ -72,7 +72,7 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative row-span-5 mb-8 grid grid-rows-subgrid gap-y-0 rounded-2xl border p-7 ${
+              className={`relative row-span-5 mb-6 grid grid-rows-subgrid gap-y-0 rounded-2xl border p-6 ${
                 plan.highlighted ? "border-accent bg-surface shadow-xl" : "border-gray-mid bg-surface shadow-sm"
               }`}
             >
@@ -82,35 +82,32 @@ export default function Pricing() {
                 </div>
               )}
 
-              <h3 className="text-xl font-bold text-foreground">{plan.name}</h3>
-              <p className="mt-1 text-sm text-foreground/50">{plan.audience}</p>
+              <h3 className="text-lg font-bold leading-snug text-foreground">{plan.name}</h3>
+              <p className="mt-1 text-sm text-foreground/60">{plan.audience}</p>
 
-              <div className="mt-5 flex items-end self-end whitespace-nowrap">
-                <span
-                  className={`font-extrabold leading-none text-foreground ${/\d/.test(plan.price) ? "text-4xl" : "text-3xl"}`}
-                >
-                  {plan.price}
-                </span>
-                {plan.period && <span className="ml-1 text-base leading-none text-foreground/50">{plan.period}</span>}
+              {/* Одна высота цены во всех карточках, включая «По запросу» */}
+              <div className="mt-4 flex items-baseline whitespace-nowrap">
+                <span className="text-3xl font-extrabold leading-none tracking-tight text-foreground">{plan.price}</span>
+                {plan.period && <span className="ml-1 text-sm text-foreground/60">{plan.period}</span>}
               </div>
 
-              <ul className="mt-5 space-y-2.5">
+              <ul className="mt-4 space-y-2">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2">
-                    <Check size={18} className="text-accent-strong mt-0.5 shrink-0" />
+                    <Check size={16} className="text-accent-strong mt-0.5 shrink-0" />
                     <span className="text-sm text-foreground/70">{f}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-6 space-y-2 self-start">
+              <div className="mt-5 space-y-2 self-start">
                 {plan.buttons.map((b, i) => (
                   <LeadButton
                     key={b.offer}
                     offer={b.offer}
                     source="pricing"
                     goal={`offer_${b.offer}`}
-                    className={`w-full rounded-xl py-3.5 text-sm font-semibold transition-all cursor-pointer ${
+                    className={`w-full rounded-xl py-2.5 text-sm font-semibold transition-all cursor-pointer ${
                       i === 0
                         ? "bg-accent text-on-accent hover:bg-accent-hover shadow-md"
                         : "border border-accent-strong text-accent-strong hover:bg-accent hover:text-on-accent"
