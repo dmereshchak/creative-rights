@@ -17,7 +17,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-gray-mid/50">
+    <header className="sticky top-0 z-50 bg-surface border-b border-gray-mid/50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center select-none text-foreground" aria-label="CreativeRights — наверх">

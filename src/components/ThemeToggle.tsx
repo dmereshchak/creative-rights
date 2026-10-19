@@ -1,13 +1,14 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
-import { THEME_STORAGE_KEY } from "@/lib/theme";
+import { THEME_STORAGE_KEY, applyThemeBarColor } from "@/lib/theme";
 
 export default function ThemeToggle({ className = "" }: { className?: string }) {
   const toggle = () => {
     const root = document.documentElement;
     const next = root.dataset.theme === "dark" ? "light" : "dark";
     root.dataset.theme = next;
+    applyThemeBarColor(next);
     try {
       localStorage.setItem(THEME_STORAGE_KEY, next);
     } catch {}

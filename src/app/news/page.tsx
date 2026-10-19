@@ -21,7 +21,7 @@ export default function News() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-gray-mid/50 bg-surface/90 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-gray-mid/50 bg-surface">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
           <Link href="/" className="text-foreground" aria-label="CreativeRights — на главную">
             <Logo className="h-8 w-auto" />

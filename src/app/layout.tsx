@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Metrika from "@/components/Metrika";
-import { themeInitScript } from "@/lib/theme";
+import { themeInitScript, THEME_BAR_COLORS } from "@/lib/theme";
 import { SITE_URL, YANDEX_VERIFICATION, GOOGLE_VERIFICATION } from "@/lib/config";
 
 const inter = Inter({
@@ -45,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="ru" suppressHydrationWarning>
       <head>
+        <meta name="theme-color" content={THEME_BAR_COLORS.light} />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>

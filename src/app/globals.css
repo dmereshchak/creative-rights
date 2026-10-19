@@ -48,7 +48,14 @@
   --font-sans: "Inter", sans-serif;
 }
 
+/* Холст за страницей: сверху цвет шапки, снизу — подвала. Его видно в «оттяжке» при прокрутке
+   и под панелями браузера на телефоне (Safari красит их по краю страницы). */
+html {
+  background: linear-gradient(to bottom, var(--surface) 0 50%, var(--ink) 50% 100%);
+}
+
 body {
+  min-height: 100vh;
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
