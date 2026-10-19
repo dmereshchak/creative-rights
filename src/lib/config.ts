@@ -27,5 +27,5 @@ export const TELEGRAM_CONTACT_URL = ""; // https://t.me/<ник>, куда пи�
 export const SITE_URL = "https://creativerights.ru";
 
 // Коды подтверждения прав в Яндекс Вебмастере и Google Search Console (мета-тег, только сам код).
-export const YANDEX_VERIFICATION = "";
+export const YANDEX_VERIFICATION = "dd446ff64191196c";
 export const GOOGLE_VERIFICATION = "";
