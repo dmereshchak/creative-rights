@@ -93,5 +93,81 @@
       "source": "https://commons.wikimedia.org/wiki/File:Louisiana_Museum_-_concert_hall.jpg",
       "file": "/news/2026-10-19-5.jpg"
     }
+  },
+  {
+    "id": "2026-10-20-1",
+    "date": "2026-10-14",
+    "added": "2026-10-20",
+    "expires": "2027-02-17",
+    "category": "courts",
+    "title": "Организатор концерта заплатит 1,3 млн ₽ за 13 песен «Миража» без лицензии",
+    "summary": "СИП оставил в силе взыскание 1,3 млн ₽ с ИП — организатора концерта Маргариты Суханкиной в Вологде — в пользу «Мираж-Медиа», которой автор музыки выдал исключительную лицензию. Довод о «сложном объекте» не помог.",
+    "forYou": "Поёте чужие песни на концерте — спросите организатора, есть ли у него договор с РАО или с правообладателем. Платит организатор, но иск может дойти и до артиста. Черновой вывод — проверяет Артём.",
+    "source": "Суд по интеллектуальным правам",
+    "url": "https://ipc.arbitr.ru/material/395224",
+    "image": {
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Royal_Albert_Hall,_London_-_Nov_2012.jpg",
+      "file": "/news/2026-10-20-1.jpg"
+    }
+  },
+  {
+    "id": "2026-10-20-2",
+    "date": "2026-10-14",
+    "added": "2026-10-20",
+    "expires": "2027-02-17",
+    "category": "courts",
+    "title": "ВС не стал пересматривать спор о мюзикле на песни группы «Секрет»",
+    "summary": "Сергей Швыдкой требовал 5 млн ₽ с авторов мюзикла «Ничего не бойся, я с тобой»: считал его переработкой своего сценария. Три инстанции отказали, ВС не передал жалобу: совпали только идеи, жанровые клише и сюжетные ходы.",
+    "forYou": "Идею, жанр и сюжетный ход закон не охраняет — только конкретный текст, мелодию, запись. Хотите защитить проект — фиксируйте готовое произведение, а не концепцию. Черновой вывод — проверяет Артём.",
+    "source": "РАПСИ",
+    "url": "https://rapsinews.ru/judicial_news/20261014/312287996.html",
+    "image": {
+      "author": "Elliott Brown from Birmingham, United Kingdom",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Theatre_Royal_Drury_Lane_-_Catherine_Street_-_London_-_Shrek_the_Musical_(6447466563).jpg",
+      "file": "/news/2026-10-20-2.jpg"
+    }
+  },
+  {
+    "id": "2026-10-20-3",
+    "date": "2026-10-19",
+    "added": "2026-10-20",
+    "expires": "2027-02-17",
+    "category": "courts",
+    "title": "Организатор тура требует с Akmal' 3,5 млн ₽ за сорванные концерты",
+    "summary": "Организатор тура по Казахстану подал иск к артисту: после скандала на концерте в Петропавловске в октябре 2025 года отменили выступления в трёх городах. Организатор считает, что артист не выполнил обязательства.",
+    "forYou": "Убытки от отмены концертов часто перекладывают на артиста. Проверьте в гастрольном договоре, кто отвечает при отмене, есть ли форс-мажор и правила поведения на сцене. Черновой вывод — проверяет Артём.",
+    "source": "InterMedia",
+    "url": "https://www.intermedia.ru/news/407516",
+    "image": {
+      "author": "Radek Grzybowski",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Empty_concert_hall_in_Katowice_(Unsplash).jpg",
+      "file": "/news/2026-10-20-3.jpg"
+    }
+  },
+  {
+    "id": "2026-10-20-4",
+    "date": "2026-10-17",
+    "added": "2026-10-20",
+    "expires": "2026-12-19",
+    "category": "industry",
+    "title": "Ивана Золо вывели со сцены в Донецке из-за футболки с символикой",
+    "summary": "17 октября силовики увели блогера и музыканта со сцены клуба в Донецке. По его словам, из-за футболки с символикой сатанизма, которую он носил в видео. Он признал вину, концерт в Мариуполе перенесён.",
+    "forYou": "Сценический образ, мерч и старые видео проверяют на запрещённую символику. Перед туром просмотрите одежду, обложки и клипы — за это могут сорвать концерт и привлечь к ответственности.",
+    "source": "The Flow",
+    "url": "https://the-flow.ru/news/ivan-zolo-donetsk-zaderzhanie",
+    "image": {
+      "author": "anpalacios",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Cavern_Club_stage_set_up,_Mathew_Street,_Liverpool,_2012.jpg",
+      "file": "/news/2026-10-20-4.jpg"
+    }
   }
 ]
